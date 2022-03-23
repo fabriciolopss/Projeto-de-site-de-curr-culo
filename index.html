@@ -7,19 +7,33 @@
     <link rel = 'stylesheet' href = "css/styles.css">
     <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <!-- Jarallax -->
-    <script src="jarallax/dist/jarallax.min.js"></script>
 
-    <!-- Include it if you want to use Video parallax -->
-    <script src="jarallax/dist/jarallax-video.min.js"></script>
 
     <title>document</title>
     
 </head>
 <body>
-    <div class = "container parallax1 jarallax">          
+    <header>
+        <a href="#" class = "logo">Currículo</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Main</a></li>
+            <li><a href="#section2">Contato</a></li>
+        </ul>
+
+
+    </header>
+
+    <script type = "text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+
+    </script>
+    <div class = "section1 container parallax1 jarallax">          
         
-        <h1 id = "title">FABRICIO LOPES</h1>
+        <h1 id = "title" class = "fabricioLopes">FABRICIO LOPES</h1>
         
         <div class = "formacaoAcademica" >
             <div class = "floatingInformation">
@@ -65,13 +79,6 @@
             </div>
             <script type = "text/javascript" src="scripts/script.js"></script> 
         </div>
-
-        <div class = "github">
-            <h2>VISITE MEUS PROJETOS:</h2>
-            <h4>link github</h4>
-        </div>
-        <button id = "topbtn"></button>
-
 
     </div>
 

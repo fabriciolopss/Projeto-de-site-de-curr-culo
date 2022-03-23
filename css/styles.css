@@ -1,13 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 
+*{
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background:black;
+    opacity:0.8;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition: 0.6s;
+    padding: 25px 100px;
+    z-index:10;
+}
+
+header.sticky{
+    opacity:0.5;
+    padding: 5px 100px;
+    background: #fff;
+}
+
+header.sticky ul li a{ 
+    color: black;
+    scroll-behavior: smooth;
+}
+
+header.sticky .logo{
+    color:black;
+}
+
+
+header .logo{
+    opacity:1;
+    position:relative;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul{
+    opacity:1;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+header ul li{
+    opacity:1;
+    position:relative;
+    list-style: none;
+}
+
+header ul li a{
+    opacity:1;
+    color: #fff;
+    position:relative;
+    margin: 0 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition:0.6s;
+}
+
 html{
     scroll-behavior: smooth;
 }
 .container{
+    position:absolute;
+    margin:0px;
     align-items:center;
     overflow:hidden;
     z-index: -1;
+    width:100%;
 }
 
 #title{
@@ -21,6 +98,8 @@ html{
 h1#title{
     padding:0px;
     margin:0px;
+    margin-top:5%;
+    margin-bottom:2%;
     font-size:150px;
     text-align:center;
     transition: transform 0.5s;
@@ -43,11 +122,19 @@ h1#title:hover{
     width:40%;
     border-radius:40px;
     box-shadow: 1px 3px 8px rgba(0, 0, 0,0.5);
-    transition: filter 0.5s;
+    transition: transform 0.5s;
 }
 
 .formacaoAcademica:hover{
-    filter: blur(6px);
+    transform: scale(1.1);
+}
+
+.futuroProgramador:hover{
+    transform: scale(1.1);
+}
+
+.quotation:hover{
+    transform: scale(1.1);
 }
 
 
@@ -86,7 +173,7 @@ h1#title:hover{
 .futuroProgramador{
     position:absolute;
     left: 50%;
-    top: 30%;
+    top: 45%;
 }
 
 .quotation{
@@ -100,10 +187,14 @@ h4#title{
 
 .certificacoesAcademicas{
     background-color:#ECB390;
-    margin-left:50%;
     width:40%;
-    border-radius:8px;
+    border-radius:40px;
     box-shadow: 1px 3px 8px rgba(0, 0, 0,0.5);
+    transition: transform 0.5s;
+}
+
+.certificacoesAcademicas:hover{
+    transform: scale(1.1);
 }
 
 
@@ -175,8 +266,3 @@ h4#title{
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-
-.github{
-    width: 400px;
-    height:400px;
-}
