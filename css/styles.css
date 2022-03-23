@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    align-items:center;
+    overflow:hidden;
+    z-index: -1;
+}
+
+#title{
+    font-family:'Poppins', sans-serif;
+    font-weight: bold;
+    color:#F5EEDC;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #DD4A48;
+}
+
+h1#title{
+    padding:0px;
+    margin:0px;
+    font-size:150px;
+    text-align:center;
+    transition: transform 0.5s;
+    cursor: default;
+}
+
+h2#title{
+    font-size:60px;
+    color:#ECB390;
+    margin:0px;
+}
+
+h1#title:hover{
+    transform: scale(1.2);
+}
+
+.formacaoAcademica, .futuroProgramador, .quotation{
+    background-color:#ECB390;
+    text-align:center;
+    width:40%;
+    border-radius:40px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0,0.5);
+    transition: filter 0.5s;
+}
+
+.formacaoAcademica:hover{
+    filter: blur(6px);
+}
+
+
+#paragrafoFormacao, .textoProgramador, .steveJobsQuotation{
+    font-family:'Poppins', sans-serif;
+    font-weight: bold;
+    font-size:30px;
+    padding-top: 2%;
+}
+
+#UFMG{
+    font-size:40px;
+}
+
+.floatingInformation{
+    display:none;
+    position:absolute;
+    border:3px dashed red;
+    width:50%;
+    background-color: #C0D8C0;
+    border-radius:8px;
+    opacity:1;
+    filter:blur(0);
+}
+
+#h3Floating{
+    font-family:'Poppins', sans-serif;
+    font-weight: bold;
+    text-align:center;
+}
+#h5Floating{
+    font-family:'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.futuroProgramador{
+    position:absolute;
+    left: 50%;
+    top: 30%;
+}
+
+.quotation{
+    margin-top:10%;
+}
+
+h4#title{
+    font-size:30px;
+    color:#ECB390;
+}
+
+.certificacoesAcademicas{
+    background-color:#ECB390;
+    margin-left:50%;
+    width:40%;
+    border-radius:8px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0,0.5);
+}
+
+
+.medalha{
+    font-family:'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#certificacoes{
+    font-family:'Poppins', sans-serif;
+    font-weight: bold;
+    color:#F5EEDC;
+    text-align:center;
+    font-size:40px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #DD4A48;
+}
+
+.medalhaImagem{
+    text-align:center;
+}
+
+.imagemPrata{
+    width:30%;
+    padding: 20px 5% 20px 5%;
+}
+
+.alinharMedalha{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex:wrap;
+}
+
+.medalha{
+    width:20%;
+    text-align:center;
+    padding: 20px 5% 20px 5%;
+}
+
+#colorPrata{
+    animation:glowingPrata 5s linear 5s infinite;
+}
+
+@keyframes glowingPrata{
+    0%{
+        color:black;
+    }
+    50%{
+        color:aliceblue;
+    }
+
+    100%{
+        color:black;
+
+    }
+
+}
+
+.parallax1 {
+    background-image: url("https://www.teahub.io/photos/full/8-82501_background-hd-wallpaper-background-image-1080-x-1920.jpg");
+}
+
+.jarallax {
+    color:white;
+    text-shadow:2px 2px 3px #111,
+                3px 3px 10px #000;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+.github{
+    width: 400px;
+    height:400px;
+}

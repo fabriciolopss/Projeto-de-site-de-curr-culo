@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jquerry": "*",
+    "jquery": "^3.6.0"
+  }
+}
